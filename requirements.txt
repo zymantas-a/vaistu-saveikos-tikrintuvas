@@ -1,0 +1,9 @@
+# Testuota su Python 3.13 ir nurodytomis versijomis (veikia nuo Python 3.10)
+streamlit>=1.50        # testuota 1.67.0
+pandas>=2.1            # testuota 3.0.5
+numpy>=1.26            # testuota 2.5.3
+scikit-learn>=1.4      # testuota 1.9.1
+lightgbm>=4.3          # testuota 4.7.0
+rapidfuzz>=3.6         # testuota 3.14.6
+matplotlib>=3.8        # testuota 3.11.2
+pytest>=8              # testams

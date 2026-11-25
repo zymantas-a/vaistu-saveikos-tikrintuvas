@@ -1,0 +1,172 @@
+{
+  "dataset": {
+    "pairs_total": 234981,
+    "labeled": 192566,
+    "unknown": 42415,
+    "drugs": 1971,
+    "class_counts": {
+      "Moderate": 143748,
+      "Major": 39082,
+      "Minor": 9736
+    }
+  },
+  "experiment_random_split": {
+    "B0: dažniausia klasė": {
+      "accuracy": 0.7464817988264008,
+      "precision_macro": 0.24882726627546692,
+      "recall_macro": 0.3333333333333333,
+      "f1_macro": 0.28494687599111956,
+      "f1_weighted": 0.6381229696794428,
+      "f1_per_class": {
+        "Minor": 0.0,
+        "Moderate": 0.8548,
+        "Major": 0.0
+      }
+    },
+    "B1: taisyklės": {
+      "accuracy": 0.7518305031936439,
+      "precision_macro": 0.5344332630009118,
+      "recall_macro": 0.343421618805539,
+      "f1_macro": 0.3061582840857115,
+      "f1_weighted": 0.6523755917747609,
+      "f1_per_class": {
+        "Minor": 0.0,
+        "Moderate": 0.8573,
+        "Major": 0.0612
+      }
+    },
+    "B2: logistinė regresija": {
+      "accuracy": 0.5212649945474372,
+      "precision_macro": 0.4512891804169408,
+      "recall_macro": 0.558867692259137,
+      "f1_macro": 0.4306766104603293,
+      "f1_weighted": 0.5688411890717083,
+      "f1_per_class": {
+        "Minor": 0.2006,
+        "Moderate": 0.6204,
+        "Major": 0.4711
+      }
+    },
+    "P: LightGBM": {
+      "accuracy": 0.8881964999740354,
+      "precision_macro": 0.8549870196364683,
+      "recall_macro": 0.7506085590869791,
+      "f1_macro": 0.7894889967754875,
+      "f1_weighted": 0.8853848320913049,
+      "f1_per_class": {
+        "Minor": 0.6537,
+        "Moderate": 0.9279,
+        "Major": 0.7869
+      }
+    },
+    "P: LightGBM (subalansuoti svoriai)": {
+      "accuracy": 0.8368904813833931,
+      "precision_macro": 0.7009758703395405,
+      "recall_macro": 0.8430129335500741,
+      "f1_macro": 0.7505407262821676,
+      "f1_weighted": 0.8462170477913509,
+      "f1_per_class": {
+        "Minor": 0.6081,
+        "Moderate": 0.8866,
+        "Major": 0.7569
+      }
+    }
+  },
+  "best_model": "P: LightGBM",
+  "experiment_cold_drugs": {
+    "B0: dažniausia klasė": {
+      "accuracy": 0.7289304233859479,
+      "precision_macro": 0.24297680779531597,
+      "recall_macro": 0.3333333333333333,
+      "f1_macro": 0.2810718170132824,
+      "f1_weighted": 0.6146453957320487,
+      "f1_per_class": {
+        "Minor": 0.0,
+        "Moderate": 0.8432,
+        "Major": 0.0
+      }
+    },
+    "B1: taisyklės": {
+      "accuracy": 0.7379907687047695,
+      "precision_macro": 0.5514097692434724,
+      "recall_macro": 0.3475963296287062,
+      "f1_macro": 0.3104753304432267,
+      "f1_weighted": 0.6367072747526111,
+      "f1_per_class": {
+        "Minor": 0.0,
+        "Moderate": 0.8475,
+        "Major": 0.0839
+      }
+    },
+    "B2: logistinė regresija": {
+      "accuracy": 0.5122229186848254,
+      "precision_macro": 0.45136619724115734,
+      "recall_macro": 0.5437631285472526,
+      "f1_macro": 0.42243344419508905,
+      "f1_weighted": 0.5555258811171768,
+      "f1_per_class": {
+        "Minor": 0.1712,
+        "Moderate": 0.597,
+        "Major": 0.4991
+      }
+    },
+    "P: LightGBM": {
+      "accuracy": 0.7611544817368511,
+      "precision_macro": 0.6391082629229081,
+      "recall_macro": 0.5528384345882383,
+      "f1_macro": 0.582860836313178,
+      "f1_weighted": 0.7519740863226577,
+      "f1_per_class": {
+        "Minor": 0.3788,
+        "Moderate": 0.8458,
+        "Major": 0.524
+      }
+    },
+    "P: LightGBM (subalansuoti svoriai)": {
+      "accuracy": 0.6817767394153513,
+      "precision_macro": 0.5163804674685224,
+      "recall_macro": 0.6047102282953841,
+      "f1_macro": 0.5320855650921928,
+      "f1_weighted": 0.7052004638558964,
+      "f1_per_class": {
+        "Minor": 0.2762,
+        "Moderate": 0.7845,
+        "Major": 0.5356
+      }
+    }
+  },
+  "best_model_cold": "P: LightGBM",
+  "classification_report": {
+    "Minor": {
+      "precision": 0.8594142259414226,
+      "recall": 0.5274781715459682,
+      "f1-score": 0.6537237428389561,
+      "support": 1947.0
+    },
+    "Moderate": {
+      "precision": 0.9148972139572626,
+      "recall": 0.9411826086956522,
+      "f1-score": 0.9278537873332647,
+      "support": 28750.0
+    },
+    "Major": {
+      "precision": 0.7906496190107194,
+      "recall": 0.7831648970193169,
+      "f1-score": 0.7868894601542417,
+      "support": 7817.0
+    },
+    "accuracy": 0.8881964999740354,
+    "macro avg": {
+      "precision": 0.8549870196364683,
+      "recall": 0.7506085590869791,
+      "f1-score": 0.7894889967754875,
+      "support": 38514.0
+    },
+    "weighted avg": {
+      "precision": 0.886874447499248,
+      "recall": 0.8881964999740354,
+      "f1-score": 0.8853848320913049,
+      "support": 38514.0
+    }
+  }
+}
